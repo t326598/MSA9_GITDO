@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트스타일</title>
+    <style>
+        /* 기본 텍스트 스타일 */
+        body{
+            /* 글꼴 지정 */
+            font-family: Arial, Helvetica, sans-serif; /* 장식없이 정자를 sans-serif 장식있는거 sarif */
+            /* 글꼴 크기 */
+            font-size: 16px;
+            /* 줄 간격 */
+            line-height: 1.8; /* px단위, 그냥 숫자(배율) */
+            /* 색상 */
+            color: #f2e;
+            
+        }
+        h1{
+            font-size: 32px;
+            /* 글꼴 굵기 */
+            font-weight: lighter;
+            /* (얇은)100 ~ 900(굵은) */
+            /* lighter, normal, bold, bolder */
+        }
+        p.bold{
+            font-weight: bold;
+            color: #2fc;
+
+        }
+        p.highlight{
+            /* 글꼴 스타일 */
+            font-style: italic;/* nomal, oblique 비스듬한 기울임체 , italic 기울임체 */
+            color: red;
+        }
+        a{
+            /* 글꼴 장식 */
+            text-decoration: none;
+            /* nene(없음), underline(밑줄)
+                overline(윗줄), lune-throgh(취소선) */
+                color: white;
+                background-color: black;
+                padding: 12px 24px;
+                border-radius: 5px;
+        }
+        /* :hover 가상 선택자 - 마우스 돌렸을때 상태 선택 */
+        a:hover{
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            background-color: #222222;
+        }
+    </style>
+</head>
+<body>
+    <h1>텍스트 스타일 지정하기</h1>
+    <p>텍스트 스타일을 지정하는 문장입니다.</p>
+    <p class="bold"> 강조하는 문장비니다.</p>
+    <p class="highlight"> 중요한 문장입니다.</p>
+    <a href="https://알클.com">Button</a>
+
+</body>
+</html>

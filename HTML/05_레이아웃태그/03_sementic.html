@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sementic Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: black;
+            height: 60px;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            float: left;
+            display: block;
+            width: 100px;
+            height: 100%;
+            line-height: 60px;
+            text-align: center;
+        }
+        nav a:hover {background-color: cornflowerblue;}
+
+        section{
+            margin: 0 auto;
+            width: 1024px;
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 200px;
+        }
+        footer{
+            background-color: lightgray;
+            min-height: 80px;
+        }
+        footer .copy{
+            float: left;
+            line-height: 80px;
+            padding: 0 20px;
+        }
+        footer .family{
+            float:right;
+            line-height: 80px;
+            min-width: 120px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sematic Layout</h1>
+    <header>
+        <nav>
+            <a href="http://naver.com">네이버</a>
+            <a href="http://kakao.com">카카오</a>
+            <a href="http://youtube.com">유튜브</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>My Page</h1>
+        <p>My Page에 오신 것을 환영합니다. :P</p>
+    </section>
+
+    <section>
+        <h1>2번째 섹션</h1>
+        <p>2번째 영역 입니다.</p>
+        <article>
+            의무교육은 무상으로 한다. 누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다. 헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다.
+            의무교육은 무상으로 한다. 누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다. 헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다.
+            의무교육은 무상으로 한다. 누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시·장소가 지체없이 통지되어야 한다. 헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다.
+        </article>
+    </section>
+
+    <section>
+        <h1>3번째 섹션</h1>
+        <p>3번째 섹션입니다.</p>
+    </section>
+
+    <footer>
+        <p class="copy">Copyright &copy; ALOHA CLASS. ALL Rights Reserved</p>
+        <p class="family">
+            <select name="family" id="family">
+                <option value="1">네이버</option>
+                <option value="2">카카오</option>
+                <option value="3">유튜브</option>
+            </select>
+        </p>
+    </footer>
+
+</body>
+</html>
