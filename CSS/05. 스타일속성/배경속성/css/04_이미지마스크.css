@@ -1,0 +1,41 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+.wrapper{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 50px;
+}
+.mask{
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 800px auto;
+}
+
+.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.heart {
+    clip-path: polygon(50% 15%, 79% 0, 100% 35%, 91% 64%, 74% 84%, 50% 100%, 28% 83%, 11% 65%, 0% 35%, 20% 0);
+}
+
+.circle {
+    clip-path: circle(50% at 50% 50%);
+}
+
+.message {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+.cross{
+    clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+}

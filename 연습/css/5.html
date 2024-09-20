@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관계 선택자</title>
+    <style>
+        article{
+            border: 3px solid orange;
+        }
+        aside{border: 3px solid hotpink;
+        margin: 10px;}
+
+        article section ul{
+            color: red;
+        }
+        article > section > ul{
+            color: blue;
+        }
+
+        h1 + h3 {
+            color: cornflowerblue;
+            font-size: 30px;
+        }
+
+        article ~ article h2{
+            color: white;
+            background-color: rebeccapurple;
+            padding: 5px;
+        }
+        p ~ span{
+            color: hotpink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>관계 선택자</h1>
+    <header>
+        <div class="logo">로고</div>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+        </ul> 
+        
+    </header>
+    <article>
+        <h1>제목</h1>
+        <h3>설명</h3>
+        <section>
+            <h2>부제목</h2>
+            <ul>
+                <li>리스트 1</li>
+                <li>리스트 2</li>
+                <li>리스트 3</li>
+            </ul>
+        </section>
+        <aside>
+            <h2>시이드바 제목</h2>
+            <h3>설명</h3>
+            <section>
+                <ul>
+                    <li>사이드 메뉴 1</li>
+                    <li>사이드 메뉴 2</li>
+                    <li>사이드 메뉴 3</li>
+                </ul>
+            </section>
+        </aside>
+    </article>
+
+    <article>
+        <h1>제목1</h1>
+        <h2>소제목1</h2>
+        <section>내용1</section>
+        
+        <h2>소제목2</h2>
+        <section>내용2</section>
+        
+        <h2>소제목3</h2>
+        <section>내용3</section>
+
+        <p>p-형제 자매 요소</p>
+        <span>spa - 형제 자매 요소</span>
+        <p>p-형제 자매 요소</p>
+        <span>spa - 형제 자매 요소</span>
+        <p>p-형제 자매 요소</p>
+        <span>spa - 형제 자매 요소</span>
+
+    </article>
+
+    <article>
+        <h2>article ~ article(뒤에만 적용)</h2>
+    </article>
+    <p>ㅇ
+    </p>
+    <span>안녕</span>
+    
+    <div style="height: 500px;"></div>
+    
+</body>
+</html>
