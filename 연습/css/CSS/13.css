@@ -1,0 +1,27 @@
+.container{ text-align: center;}
+
+.inner{
+    width: 70vw;
+    min-height: 70vh;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
+.back1{
+    background-image: url();
+
+
+}
+
+.back2{
+    min-height: 190px;
+    background-image: url(../img/background.jpg);
+    background-size: 200px 190px;
+    background-repeat: repeat;
+
+}
+
+.back3{
+    min-height: 600px;
+    background-image: url(../img/aloha.png);
+}
