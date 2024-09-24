@@ -1,0 +1,27 @@
+* {box-sizing: border-box;}
+
+.container{
+    width: 700px;   
+    margin: 0 auto;
+}
+
+.btn{
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    text-align: center;
+text-decoration: none;
+border-radius: 12px;
+}
+
+.success{
+    background-color: yellow;
+
+}
+.success:hover{
+    background-color: rgb(173, 173, 6);
+}
+.success:active{
+    background-color: rgb(47, 47, 3);
+    color: white;
+}

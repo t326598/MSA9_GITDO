@@ -1,0 +1,43 @@
+* { margin: 0;padding: 0;box-sizing: border-box;}
+
+
+a{ text-decoration: none; color: black;}
+
+
+/* ↑ 플로팅 버튼 */
+
+.floating{
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.floating a{
+display: inline-block;
+width: 100%;
+height: 100%;
+text-align: center;
+line-height: 45px;
+font-size: 40px;
+color: white;
+border-radius: 50%;
+user-select: none;
+}
+
+html{
+    /* 스크롤을 부드럽게 이동 */
+    scroll-behavior: smooth;
+}
+
+section{
+    min-height: 400px;
+    width: 100%;
+}
+
+section.bg{
+    background-color: #ddd;
+}

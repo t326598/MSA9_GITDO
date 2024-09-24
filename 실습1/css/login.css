@@ -1,0 +1,79 @@
+
+
+.container{
+  
+    width: 500px;
+    height: 800px;
+    margin: 100px auto;
+    border: 1px solid #000;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.img{
+    position: relative;
+    display: inline-block;
+    margin-top: 50px ;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 37%; 
+}
+
+.id{
+    position: relative;
+    margin: 90px 0 0 40px;
+    width: 46%;
+}
+
+.pw{
+    position: relative;
+    margin: 20px 0 0 40px;
+    width: 46%;
+}
+
+.check{
+    display: flex;
+    position: absolute;
+    margin: 10px 10px 10px 150px;
+    justify-content: space-around;
+   
+
+}
+
+
+.btn{
+
+min-width: 120px;
+padding: 12px 120px;
+background-color: skyblue;
+color: white;
+border-radius: 10px;
+text-decoration: none;
+text-align: center;
+}
+
+.login{
+    position: relative;
+    display: flex;
+    top: 65%;
+    margin: 50px 60px 10px 70px;
+    justify-content: center;
+
+}
+
+.ghl{
+    position: relative;
+    display: flex;
+    top: 65%;
+    margin: 10px 60px 10px 70px;
+    justify-content: center;
+
+    
+}
+
+.copy{
+    position: relative;   
+    margin: 180px 10px 10px 70px;
+}
