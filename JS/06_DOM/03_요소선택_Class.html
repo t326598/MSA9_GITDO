@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 선택 - Class</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            //
+            const items = document.getElementsByClassName("item")
+            console.log(items);
+
+            items[0].style.width = '100px'
+            items[0].style.height = '100px'
+            items[0].style.backgroundColor = 'royalblue'
+            
+            
+            items.item(1).style.width = '100px'
+            items.item(1).style.height = '100px'
+            items.item(1).style.backgroundColor ='red'
+
+        })
+
+    </script>
+
+</head>
+<body>
+    
+    <div class="item"></div>
+    <div class="item"></div>
+
+</body>
+</html>
