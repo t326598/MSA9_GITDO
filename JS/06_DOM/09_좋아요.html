@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- meterial icons -->
+     <!-- FILL : 0..1로 해야 outline, fill 모두 사용가능 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        .container{
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            
+        }
+        .title{
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .title .item{ display: flex;
+                align-items: center;
+                column-gap: 6px;
+        }
+
+        .title .item img{ 
+            width: 32px;
+            height: 32px;
+            position: relative;
+            top: 3px;
+           
+        }
+
+        .title .item .icon{
+            display: flex;
+            align-items: center;
+        }
+        
+        .img-box img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .action-box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 10px;
+            user-select: none;
+        }
+
+        .action-box .icon-heart.selected{
+          
+            font-variation-settings:
+             'FILL'  1,
+            'wght' 400,
+            'GRAD' 0,
+             'opsz' 24;
+             color: red;
+
+        }
+
+        .icon.selected{
+            font-variation-settings:
+             'FILL'  1,
+            'wght' 400,
+            'GRAD' 0,
+             'opsz' 24;
+        }
+
+        .icon{
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .icon-heart {
+          
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="feed-list">
+            <div class="feed">
+                <div class="title">
+                    <div class="item">
+                        <div class="avatar">
+                            <img src="img/avatar.png" alt="프로필">
+                        </div>
+                        <div class="writer">  
+                            my_account  
+                        </div>
+                    </div>
+                        <div class="item">
+                            <div class="icon">
+                                <!-- 더보기 아이콘 -->
+                                <span class="material-symbols-outlined icon">
+                                    more_horiz
+                                    </span>
+                        </div>
+                        </div> 
+
+                 <!-- .title 끝  -->
+                </div>
+                        <div class="content">
+                            <div class="img-box" id="imgBox">
+                                <img src="img/content.jpg" alt="피드이미지">
+                            </div>
+                            <div class="content-box">
+                                <p class="text"></p>
+                            </div>
+                        </div>
+                        <div class="action-box">
+                            <div class="item">
+                                <!--  좋아요 아이콘 -->
+                                <span class="material-symbols-outlined icon icon-heart ">favorite</span>
+                                  <!-- 댓글 아이콘 -->
+                                  <span class="material-symbols-outlined icon">chat_bubble</span>
+                                   <!-- DM 아이콘 -->
+                                   <span class="material-symbols-outlined icon ">
+                                    send
+                                    </span>
+                            </div>
+                            <div class="item">
+                                <!-- 스크랩 아이콘 -->
+                                <span class="material-symbols-outlined icon ">bookmark</span>
+                            </div>
+                        </div>
+                
+            
+        </div>
+        </div>
+
+
+    </div>
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+
+
+        const icons = document.getElementsByClassName('icon')
+     
+   let heartIcon = ''   
+
+       for (let i = 0; i< icons.length; i++) {
+      const icon = icons[i];
+    
+      if( icon.classList.contains('icon-heart') )
+      heartIcon = icon
+      
+      icon.addEventListener('click', (event) =>{
+        //icon.classList.add('selected')
+        icon.classList.toggle('selected')
+
+    })
+}
+    // 하트 아이콘 클릭 이벤트
+    heartIcon.addEventListener('click', (event) => {
+        
+    if(heartIcon.classList.contains('selected'))
+    heartAlert()    
+})
+
+   
+
+    const imgBox = document.getElementById('imgBox')
+
+    //더블 클릭 이벤트 타입: dblclick
+    imgBox.addEventListener('dblclick',(event) =>{
+
+        
+        heartIcon.classList.toggle('selected')
+        if(heartIcon.classList.contains('selected'))
+        heartAlert()
+     
+    })
+
+    function heartAlert(){
+        Swal.fire({
+  title: "Like it!",
+  text: "좋아요",
+  imageUrl: "https://unsplash.it/400/200",
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: "Custom image",
+  timer: 2000,
+  showConfirmButton:false
+
+  
+});
+    }
+
+    </script>
+</body>
+</html>
